@@ -1,0 +1,102 @@
+.navigate {
+    position: sticky;
+    top: 0;
+    margin-right: 38px;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--gray-color);
+
+    &:not(:first-child) {
+        margin-top: 32px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        height: 60px;
+        padding-left: 35px;
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            margin-right: 26px;
+            background-color: var(--gray-color); 
+            mask-repeat: no-repeat;
+            mask-size: contain;
+            flex-shrink: 0;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-size: contain;
+        }
+
+        &_dashboard::before {
+            mask-image: url('../../assets/icons/navigate/Dashboard.svg'); 
+        }
+
+        &_transactions::before {
+            mask-image: url('../../assets/icons/navigate/Transactions.svg');
+        }
+
+        &_accounts::before {
+            mask-image: url('../../assets/icons/navigate/Accounts.svg');
+        }
+
+        &_investments::before {
+            mask-image: url('../../assets/icons/navigate/Investments.svg');
+        }
+
+        &_creditCards::before {
+            mask-image: url('../../assets/icons/navigate/creditCards.svg');
+        }
+
+        &_loans::before {
+            mask-image: url('../../assets/icons/navigate/Loans.svg');
+        }
+
+        &_services::before {
+            mask-image: url('../../assets/icons/navigate/Services.svg');
+        }
+
+        &_myPrivileges::before {
+            mask-image: url('../../assets/icons/navigate/myPrivileges.svg');
+        }
+
+        &_setting::before {
+            mask-image: url('../../assets/icons/navigate/Setting.svg');
+        }
+
+        &_current::before {
+            background-color: var(--blue-color); 
+        }
+
+        &_current {
+            position: relative;
+            color: var(--blue-color);
+        
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 6px;
+                background-color: var(--blue-color);
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+}

@@ -1,0 +1,12 @@
+.main {
+    padding: 30px 40px;
+    background-color: var(--light-color);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 1024px) {
+        padding-inline: 25px;
+    }
+}

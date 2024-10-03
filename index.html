@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>test</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <div class="sidebar">
+        <img
+          class="sidebar__logo"
+          height="36"
+          width="183"
+          src="./assets/images/Logo.svg"
+          alt="main logo bank dash"
+        />
+        <nav class="navigate">
+          <ul class="navigate__list">
+            <li class="navigate__item navigate__item_dashboard">
+              <a class="navigate__link" href="/">Dashboard</a>
+            </li>
+            <li class="navigate__item navigate__item_transactions">
+              <a class="navigate__link" href="/">Transactions</a>
+            </li>
+            <li class="navigate__item navigate__item_accounts">
+              <a class="navigate__link" href="/">Accounts</a>
+            </li>
+            <li class="navigate__item navigate__item_investments">
+              <a class="navigate__link" href="/">Investments</a>
+            </li>
+            <li class="navigate__item navigate__item_creditCards">
+              <a class="navigate__link" href="/">Credit Cards</a>
+            </li>
+            <li class="navigate__item navigate__item_loans">
+              <a class="navigate__link" href="/">Loans</a>
+            </li>
+            <li class="navigate__item navigate__item_services">
+              <a class="navigate__link" href="/">Services</a>
+            </li>
+            <li class="navigate__item navigate__item_myPrivileges">
+              <a class="navigate__link" href="/">My Privileges</a>
+            </li>
+            <li
+              class="navigate__item navigate__item_setting navigate__item_current"
+            >
+              <a class="navigate__link" href="/">Setting</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <header class="header">
+          <div class="header__hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+          <h2 class="header__title">Setting</h2>
+          <label for="search" class="header__input input_icon input_search">
+            <input
+              id="search"
+              class="input"
+              type="text"
+              placeholder="Search for something"
+            /><span class="sr-only"> search input. Write you text this </span>
+          </label>
+          <button class="header__button button button_round button_icon button_settings">
+            <span class="sr-only">settings</span>
+          </button>
+          <button class="header__button button button_round button_icon button_notifications">
+            <span class="sr-only">notifications</span>
+          </button>
+          <button class="header__avatar button button_round button_big">
+            <img
+              class="header__avatar-img"
+              src="./assets/images/avatar/avatar.jpg"
+              alt="you avatar"
+            />
+          </button>
+        </header>
+        <main class="main">
+          <div class="card">
+            <ul class="card__options">
+              <li class="card__option card__option_current">
+                <button class="card__option-btn">Edit Profile</button>
+              </li>
+              <li class="card__option">
+                <button class="card__option-btn">Preferences</button>
+              </li>
+              <li class="card__option">
+                <button class="card__option-btn">Security</button>
+              </li>
+            </ul>
+            <div class="profile">
+              <div class="profile__avatar">
+                <img
+                  class="profile__avatar-img"
+                  src="./assets/images/avatar/avatar.jpg"
+                  alt="you avatar"
+                />
+                <button class="profile__btn button">
+                  <span class="sr-only">edit profile</span>
+                </button>
+              </div>
+              <form class="profile__form form" action="">
+                <div class="profile__input-wrapper">
+                  <label for="name" class="form__input-label">Your Name</label>
+                  <input
+                    id="name"
+                    class="form__input input"
+                    type="text"
+                    value="Charlene Reed"
+                  />
+                </div>
+                <div class="profile__input-wrapper">
+                  <label for="username" class="form__input-label">User Name</label>
+                  <input
+                    id="username"
+                    class="form__input input"
+                    type="text"
+                    value="Charlene Reed"
+                  />
+                </div>
+                <div class="profile__input-wrapper">
+                  <label for="email" class="form__input-label">Email</label>
+                  <input
+                    id="email"
+                    class="form__input input"
+                    type="email"
+                    value="charlenereed@gmail.com"
+                  />
+                </div>
+                <div class="profile__input-wrapper">
+                  <label for="password" class="form__input-label">Password</label>
+                  <input
+                    id="password"
+                    class="form__input input"
+                    type="password"
+                    value="**********"
+                  />
+                </div>
+                <div class="profile__input-wrapper">
+                  <label for="dateofBirth" class="form__input-label">Date of Birth</label>
+                  <input
+                    id="dateofBirth"
+                    class="form__input input"
+                    type="text"
+                    value="25 January 1990"
+                  />
+                </div>
+                <div class="profile__input-wrapper">
+                  <label for="presentAddress" class="form__input-label">Present Address</label>
+                  <input
+                    id="presentAddress"
+                    class="form__input input"
+                    type="text"
+                    value="Charlene Reed"
+                  />
+                </div>
+                <div class="profile__input-wrapper">
+                  <label for="permanentAddress" class="form__input-label">Permanent Address</label>
+                  <input
+                    id="permanentAddress"
+                    class="form__input input"
+                    type="text"
+                    value="San Jose, California, USA"
+                  />
+                </div>
+                <div class="profile__input-wrapper">
+                  <label for="city" class="form__input-label">City</label>
+                  <input
+                    id="city"
+                    class="form__input input"
+                    type="text"
+                    value="San Jose"
+                  />
+                </div>
+                <div class="profile__input-wrapper">
+                  <label for="postalCode" class="form__input-label">Postal Code</label>
+                  <input
+                    id="postalCode"
+                    class="form__input input"
+                    type="number"
+                    value="45962"
+                  />
+                </div>
+                <div class="profile__input-wrapper">
+                  <label for="country" class="form__input-label">Country</label>
+                  <input
+                    id="country"
+                    class="form__input input"
+                    type="text"
+                    value="USA"
+                  />
+                </div>
+                <button class="form__button button" type="submit">Save</button>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

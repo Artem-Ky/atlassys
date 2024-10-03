@@ -1,0 +1,18 @@
+.sidebar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    min-height: 100vh;
+    border-right: 1px solid var(--divider-border-color);
+    flex-shrink: 0;
+
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+
+    &__logo {
+        margin-top: 33px;
+        margin-left: 44px;
+    }
+}

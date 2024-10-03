@@ -1,0 +1,5 @@
+@import "./reset", "./fonts", "./variables", "./mixins", "./media", "./utils",
+  "./globals";
+
+@import "./blocks/sidebar", "./blocks/navigate", "./blocks/header",
+  "./blocks/button", "./blocks/input", "./blocks/main-section", "./blocks/card", './blocks/profile', './blocks/form';

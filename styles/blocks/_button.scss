@@ -1,0 +1,51 @@
+.button {
+    --height: var(--button-height);
+    --width: var(--button-width);
+    height: var(--height);
+    width: var(--width);
+
+    &_round {
+        width: min(var(--height), var(--width));
+        height: min(var(--height), var(--width));
+        border-radius: 50%;
+        background-color: var(--light-color);
+
+        @media screen and (max-width: 1024px) {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    &_big {
+        --height: var(--button-height-big);
+    }
+
+    &_icon {
+        position: relative;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            @include abs-center;
+            width: 25px;
+            height: 25px;
+            margin-right: 26px;
+            background-color: var(--gray-color); 
+            mask-repeat: no-repeat;
+            mask-size: contain;
+            flex-shrink: 0;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-size: contain;
+        }
+    }
+
+    &_notifications::before {
+        mask-image: url('../../assets/icons/notification.svg'); 
+        background-color: var(--red-color); 
+    }
+
+    &_settings::before {
+        mask-image: url('../../assets/icons/setting.svg'); 
+        background-color: var(--main-color); 
+    }
+}

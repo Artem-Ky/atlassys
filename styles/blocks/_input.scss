@@ -1,0 +1,44 @@
+.input {
+    height: var(--input-height);
+    width: var(input-width);
+    background-color: var(--light-color);
+    padding-inline: 20px;
+    border-radius: var(--border-radius-xl);
+    color: var(--main-color);
+    font-size: 15px;
+
+    &:placeholder {
+        font-size: 15px;
+        color: var(--main-color-alt);
+    }
+
+    &_icon {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            top: 50%;
+            left: 25px;
+            transform: translate(0, -50%);
+            width: 20px;
+            height: 20px;
+            background-color: var(--gray-color); 
+            mask-repeat: no-repeat;
+            mask-size: contain;
+            flex-shrink: 0;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-size: contain;
+        }
+    }
+
+    .input_icon & {
+        padding-left: 60px;
+    }
+
+    &_search::before {
+        mask-image: url('../../assets/icons/notification.svg'); 
+        background-color: var(--red-color); 
+    }
+}
