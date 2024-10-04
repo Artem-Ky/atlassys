@@ -38,7 +38,7 @@
     }
 
     &_search::before {
-        mask-image: url('../../assets/icons/notification.svg'); 
-        background-color: var(--red-color); 
+        mask-image: url('../../assets/icons/search.svg'); 
+        background-color: var(--main-color); 
     }
 }
